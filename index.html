@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Aroma | Colognes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">Maison Aroma</div>
+        <div class="nav-links">
+          <a href="#shop">Shop</a>
+          <a href="#collections">Collections</a>
+          <a href="#story">Our Story</a>
+          <button class="ghost">Sign In</button>
+        </div>
+        <button class="cart-button" id="open-cart">
+          Cart <span id="cart-count">0</span>
+        </button>
+      </nav>
+      <section class="hero-content">
+        <div>
+          <p class="eyebrow">Limited Artisan Launch</p>
+          <h1>Signature colognes crafted for memorable nights.</h1>
+          <p class="lead">
+            Discover fresh, woody, and amber blends inspired by coastal mornings and
+            velvet lounges. Free samples with every order.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Shop Now</button>
+            <button class="ghost">Build a Scent</button>
+          </div>
+          <div class="trust">
+            <span>✦ 4.9 average rating</span>
+            <span>✦ Free returns</span>
+            <span>✦ Vegan & cruelty-free</span>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Discovery Set</h3>
+          <p>Try all 5 signature scents in travel sprays.</p>
+          <div class="price-row">
+            <span>$48</span>
+            <button class="primary" data-product="discovery">Add set</button>
+          </div>
+          <div class="notes">
+            <span>Notes: Bergamot, Cedar, Tonka</span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="shop" class="section">
+        <div class="section-header">
+          <h2>Best sellers</h2>
+          <p>Layerable blends designed for every mood.</p>
+        </div>
+        <div class="grid" id="product-grid"></div>
+      </section>
+
+      <section id="collections" class="section dark">
+        <div class="collection">
+          <div>
+            <h2>Evening Reserve</h2>
+            <p>
+              Warm amber and black tea for refined nights out. Perfect with leather,
+              cashmere, and candlelit rooms.
+            </p>
+            <button class="ghost">Explore collection</button>
+          </div>
+          <div class="collection-card">
+            <h3>Reserve Bundle</h3>
+            <p>Includes 50ml Reserve, travel spray, and candle.</p>
+            <div class="price-row">
+              <span>$130</span>
+              <button class="primary" data-product="reserve-bundle">Add bundle</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section">
+        <div class="story">
+          <div>
+            <h2>Why Maison Aroma</h2>
+            <p>
+              Every bottle is blended in small batches by our perfumers in Austin, Texas.
+              Sustainable ingredients, long-lasting performance, and a modern aesthetic.
+            </p>
+            <ul>
+              <li>✅ 30-day scent swap guarantee</li>
+              <li>✅ Refillable bottles</li>
+              <li>✅ Custom engraving</li>
+            </ul>
+          </div>
+          <form class="newsletter">
+            <h3>Get sample drops + 10% off</h3>
+            <p>Join our list for exclusive releases.</p>
+            <input type="email" placeholder="Enter your email" />
+            <button class="primary" type="submit">Join list</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart" id="cart">
+      <div class="cart-header">
+        <h3>Your cart</h3>
+        <button class="ghost" id="close-cart">Close</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="total">
+          <span>Total</span>
+          <span id="cart-total">$0</span>
+        </div>
+        <button class="primary full">Checkout</button>
+      </div>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>
